@@ -2,20 +2,21 @@
 #include <string>
 using namespace std;
 
-int t;
-int ascll[1011];
-// int input;
-string str;
-
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
 
+    int t;
+
     cin >> t;
-    int i = 1;
-    while (getline(cin, str)) {
-        
+
+    // getchar();
+
+    for (int i = 0; i < t; i++) {
+        int ascii;
+        cin >> ascii;
+        cout << static_cast<char>(ascii);  
     }
 
     return 0;
