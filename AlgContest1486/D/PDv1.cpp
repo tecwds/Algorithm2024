@@ -2,22 +2,39 @@
 #include <cmath>
 using namespace std;
 
-long long a;
-long long n;
-long long m = 1;
+int pow_get_3last(int base, int index) {
+    long long result = 1;
+    long long base_ = base % 1000;
+
+    while (index > 0) {
+        if (index % 2 == 1) {
+            result = (result * base_) % 1000;
+        }
+        base_ = (base_ * base_) % 1000;
+        index >>= 1;
+    }
+
+    return static_cast<int>(result % 1000);
+}
 
 int main() {
 
+    int a;
+    
     cin >> a;
 
-    while (++m) {
-        long long pm = static_cast<long long>(pow(a, m)) % 1000;
-        cout << "pm = " << pm << endl;
-        while (++n && n < m) {
-            if (pm == ((long long)pow(a, n) % 1000)) {
-                cout << n << " " << m << endl;
-                return 0;
-            }
+    int n = 1;
+    int m = 2;
+
+    while (1) {
+        if (pow_get_3last(a, m) == pow_get_3last(a, n)) {
+            cout << n << " " << m << endl;
+            break;
+        }
+        m++;
+        if (m == n) {
+            n++;
+            m = n + 1;
         }
     }
 
