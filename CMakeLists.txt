@@ -1,0 +1,4 @@
+cmake_minimum_required(VERSION 3.0)
+
+add_executable(PHv1 AlgContest1486/H/PHv1.cpp)
+set_target_properties(PHv1 PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/target")
