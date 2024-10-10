@@ -31,16 +31,17 @@ void my_print() {
 }
 
 void dfs(const int k) {
-    if (k == n) {
-        if (prime_sum(a[n - 1], a[0])) my_print();
-    } else {
-        for (int i = 2; i <= n; ++i) {
-            if (!vis[i] && prime_sum(a[k - 1], i)) {
-                a[k] = i;
-                vis[i] = true;
+    for (int i = 2; i <= n; ++i) {
+        if (!vis[i] && prime_sum(a[k - 1], i)) {
+            a[k] = i;
+            vis[i] = true;
+            if (k == n - 1) {
+                if (prime_sum(a[n - 1], a[0])) my_print();
+            } else {
                 dfs(k + 1);
-                vis[i] = false;
             }
+            vis[i] = false;
+
         }
     }
 }
@@ -58,11 +59,13 @@ int main() {
 
         if (n % 2 == 0) {
             a[0] = 1;
+            vis[1] = true;
             dfs(1);
         }
 
         cout << endl;
     }
+
 
     return 0;
 }
