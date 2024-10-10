@@ -2,36 +2,18 @@
 
 using namespace std;
 
-// f1 = 0
-// f2 = 1
-// f3 = 2
-// 
-
-long long cnn(int n, int i) {
-    for (int j = 0; j <)
+long long cnn(int n) {
+    if (n == 1) return 0L;
+    if (n == 2) return 1L;
+    else return (n - 1) * (cnn(n - 1) + cnn(n - 2));
 }
-
 
 int main() {
 
     int n;
 
-    while (~scanf("%d", &n)) {
-        long long f1 = 0;
-        long long f2 = 1;
-        long long fn = 0;
-
-        if (n == 1) {
-            cout << f1 << endl;
-            continue;
-        } else if (n == 2) {
-            cout << f2 << endl;
-            continue;
-        }
-
-        for (int i = 3; i <= n; i++) {
-            fn = 
-        }
+    while (cin >> n) {
+        cout << cnn(n) << endl;
     }
 
     return 0;

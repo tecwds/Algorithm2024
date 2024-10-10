@@ -1,15 +1,4 @@
 cmake_minimum_required(VERSION 3.0)
 
-add_executable(PHv1 AlgContest1494/H/PHv1.cpp)
-add_executable(PIv1 AlgContest1494/I/PIv1.cpp)
-add_executable(PJv1 AlgContest1494/K/PJv1.cpp)
-add_executable(PKv1 AlgContest1494/K/PKv1.cpp)
-add_executable(PMv1 AlgContest1486/M/PMv1.cpp)
-set_target_properties(PMv1 PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/target")
-add_executable(PNv1 AlgContest1486/N/PNv1.cpp)
-set_target_properties(PNv1 PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/target")
-add_executable(POv1 AlgContest1486/O/POv1.cpp)
-set_target_properties(POv1 PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/target")
-add_executable(PDv1 AlgContest1494/D/PDv1.cpp)
-add_executable(PDv2 AlgContest1494/D/PDv2.cpp)
-add_executable(PEv1 AlgContest1494/E/PEv1.cpp)
+
+add_executable(PEv1 AlgContest1516/E/PEv1.cpp)
