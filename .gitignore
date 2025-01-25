@@ -1,2 +1,7 @@
 target/
 cmake-build-debug/
+cmake-build-*/
+build/
+.idea/
+.unioncode/
+.vscode

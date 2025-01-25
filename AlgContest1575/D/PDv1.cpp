@@ -34,7 +34,7 @@ void dijkstra() {
     }
 }
 
-int main(int argc, char *argv[]) {
+int main() {
     ios::sync_with_stdio(false);
     cout.tie(nullptr);
     cin.tie(nullptr);

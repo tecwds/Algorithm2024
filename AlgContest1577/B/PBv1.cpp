@@ -20,7 +20,7 @@ Point find(const Point k) {
     return mp[k.x][k.y] = find(mp[k.x][k.y]);
 }
 
-int main(int argc, char *argv[]) {
+int main() {
     ios::sync_with_stdio(false);
     cout.tie(nullptr);
     cin.tie(nullptr);

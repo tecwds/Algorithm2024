@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, char *argv[]) {
+int main() {
     int n;
     while (cin >> n && n > 0) {
         if (n <= 4) {

@@ -28,7 +28,6 @@ int main()
         case '-':
             total_gpa -= 0.3;
             break;
-        
         case 'A':
             total_gpa += 4;
             sub_num++;

@@ -10,7 +10,7 @@ int mp[90][90];
 int w;
 
 
-int main(int argc, char *argv[]) {
+int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);

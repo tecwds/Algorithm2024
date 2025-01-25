@@ -17,7 +17,7 @@ bool high_level(const bk a, const bk b) {
     return (1.0 * a.wi / a.ci) > (1.0 * b.wi / b.ci);
 }
 
-int main(int argc, char *argv[]) {
+int main() {
     vector<bk> back;
 
     int v;
